@@ -15,6 +15,11 @@ public class Longest1sTest {
 	public void testRegularCase() {
 		assertTrue(Longest1s.getLongest1s(14) == 3);
 	}
+
+	@Test
+	public void testRegularCaseMed() {
+		assertTrue(Longest1s.getLongest1s(140) == 2);
+	}
 	
 	@Test
 	public void testRegularNegCase() {
