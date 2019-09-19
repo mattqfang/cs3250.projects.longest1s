@@ -3,8 +3,6 @@ package uvu.cs.cs3250.assignments;
 import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
-import java.security.InvalidParameterException;
-
 public class Longest1sTest {
 	
 	@Test

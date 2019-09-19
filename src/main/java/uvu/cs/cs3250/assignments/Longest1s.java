@@ -1,5 +1,4 @@
 package uvu.cs.cs3250.assignments;
-import java.security.InvalidParameterException;
 
 public class Longest1s {
 
