@@ -16,8 +16,8 @@ public class LongestConsecutiveOnesTest {
 	}
 	
 	@Test
-	public void testNumber_2147483647_LongestConsecutiveNumberOfOnes_31() {
-		assertEquals(31, LongestConsecutiveOnes.countConsecutiveBinaryOnesFromInt(2147483647));
+	public void testNumber_Max_Value_LongestConsecutiveNumberOfOnes_31() { //2147483647
+		assertEquals(31, LongestConsecutiveOnes.countConsecutiveBinaryOnesFromInt(Integer.MAX_VALUE));
 	}
 	
 	@Test
@@ -38,20 +38,5 @@ public class LongestConsecutiveOnesTest {
     @Test
 	public void testNumber_2731_LongestConsecutiveNumberOfOnes_2() {
 		assertEquals(2, LongestConsecutiveOnes.countConsecutiveBinaryOnesFromInt(2731));
-	}
-    
-    @Test
-	public void testNumber_Negative1_LongestConsecutiveNumberOfOnes_32() {
-		assertEquals(32, LongestConsecutiveOnes.countConsecutiveBinaryOnesFromInt(-1));
-	}
-    
-    @Test
-	public void testNumber_Negative5_LongestConsecutiveNumberOfOnes_29() {
-		assertEquals(29, LongestConsecutiveOnes.countConsecutiveBinaryOnesFromInt(-5));
-	}
-    
-    @Test
-	public void testNumber_Negative31_LongestConsecutiveNumberOfOnes_27() {
-		assertEquals(27, LongestConsecutiveOnes.countConsecutiveBinaryOnesFromInt(-31));
 	}
 }
