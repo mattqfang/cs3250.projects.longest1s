@@ -3,6 +3,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class Longest1sTest {
+	
 	@Test
 	public void testGetLongest_negativeNum() {
 		assertEquals(0, Longest1s.getLongestRun(-10));
