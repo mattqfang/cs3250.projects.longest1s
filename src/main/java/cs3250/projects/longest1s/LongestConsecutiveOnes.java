@@ -7,11 +7,6 @@ public class LongestConsecutiveOnes {
 			return 0;
 		
 		String binaryString = Integer.toBinaryString(num);
-		
-		if(!binaryString.contains("0")) {
-			return binaryString.length();
-		}
-		
 		String[] stringArray = binaryString.split("0");
 		int maxLength = 0;
 		
