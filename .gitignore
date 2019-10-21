@@ -2,3 +2,5 @@
 .project
 .classpath
 .settings
+
+*.sw[a-z]
