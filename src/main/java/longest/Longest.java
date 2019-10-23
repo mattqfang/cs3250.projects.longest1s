@@ -3,9 +3,6 @@
 
 package longest;
 
-import java.util.ArrayList;
-import java.util.List;
-
 // https://uvu.instructure.com/courses/482395/assignments/4432315
 
 // Given a number N. The task is to find the length of the longest consecutive 1s in its binary representation.
@@ -13,26 +10,40 @@ import java.util.List;
 // The repository URL: https://github.com/mattqfang/cs3250.projects.longest1s.git
 
 public class Longest {
+    public static int getLongestConsecutiveOnes(int n) {
+        String word = convertToBinaryString(n); // convert number to binary representation
+        String[] substrings = processWord(word); // get an array of substrings
+        return getLongestSubstringLength(substrings); // return the length of the longest substring
+    }
 
     public static String convertToBinaryString(int n) {
-        return Integer.toBinaryString(n);
+        return Integer.toBinaryString(n); // built in Integer function. super nice
     }
 
-    public static List<String> getCharacterList(String inString) {
-        List<String> result = new ArrayList<>();
-        for (int i = 0; i < inString.length(); i++) {
-            result.add(inString.substring(i));
+    public static int getLongestSubstringLength(String[] substrings) {
+        int max = 0;
+        for (String s : substrings) {
+            if (s.length() > max) {
+                max = s.length();
+            }
         }
-        return result;  
+        return max;
     }
 
-    public static Long getLongestConsecutiveOnes(int n) {
-        String word = convertToBinaryString(n);
-        List<String> characters = getCharacterList(word);
-        return characters.stream().parallel()
-            .filter(c -> c.equals("1"))
-            .count();
+    public static String printLongestConsecutiveBits(int n) { // stupid, but fun
+        int numOnes = getLongestConsecutiveOnes(n);
+        String result = "";
+        for (int i = 0; i < numOnes; i++) {
+            result += "1";
+        }
+        return result;
     }
-    // String stringRepresentation = Integer.toBinaryString(int n)
-    // 
+
+    public static String[] processWord(String word) {
+        // we're working in binary so our lang = {1,0}
+        // 00* works better than 0* because it splits on 1 or more consecutive 0's
+        return word.split("00*"); 
+    }
+
+
 }
