@@ -20,7 +20,7 @@ public class Longest {
         return strNum + ": " + count;
     }
     public static void main(String[] args){
-        int n = 2147483647;
+        int n = -673211;
         System.out.println(longest(n));
         System.out.println(longest(2147483647));
     }

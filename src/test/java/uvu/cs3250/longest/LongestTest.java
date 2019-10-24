@@ -34,6 +34,20 @@ public class LongestTest {
         assertEquals(expected, result);
     }
     @Test
+    public void testNegativeNum673211() {
+        String expected = Integer.toBinaryString(-673211) + ": " + 12;
+        String result = Longest.longest(-673211);
+
+        assertEquals(expected, result);
+    }
+    @Test
+    public void testMaxNegativeInt() {
+        String expected = Integer.toBinaryString(-2147483648) + ": " + 1;
+        String result = Longest.longest(-2147483648);
+
+        assertEquals(expected, result);
+    }
+    @Test
     public void testCharA() {
         String expected = Integer.toBinaryString('A') + ": " + 1;
         String result = Longest.longest('A');
