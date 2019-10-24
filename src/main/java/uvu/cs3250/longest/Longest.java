@@ -2,6 +2,7 @@ package uvu.cs3250.longest;
 
 public class Longest {
 
+    //Function that reads an integer in and translates to binary.  Then it looks for longest string of 1's
     public static String longest(int num){
         String strNum = Integer.toBinaryString(num);
         int count = 0;
@@ -18,10 +19,5 @@ public class Longest {
                 count = charCount;
         }
         return strNum + ": " + count;
-    }
-    public static void main(String[] args){
-        int n = -673211;
-        System.out.println(longest(n));
-        System.out.println(longest(2147483647));
     }
 }
