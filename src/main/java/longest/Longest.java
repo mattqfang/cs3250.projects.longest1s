@@ -3,6 +3,10 @@
 
 package longest;
 
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+
 // https://uvu.instructure.com/courses/482395/assignments/4432315
 
 // Given a number N. The task is to find the length of the longest consecutive 1s in its binary representation.
@@ -11,38 +15,37 @@ package longest;
 
 public class Longest {
     public static int getLongestConsecutiveOnes(int n) {
-        String word = convertToBinaryString(n); // convert number to binary representation
-        String[] substrings = processWord(word); // get an array of substrings
-        return getLongestSubstringLength(substrings); // return the length of the longest substring
+        String word = getBinaryString(n); // convert number to binary representation
+        List<String> substrings = getSubstrings(word); // get a list of substrings
+        return getLengthLongestSubstring(substrings); // return the length of the longest substring
     }
 
-    public static String convertToBinaryString(int n) {
-        return Integer.toBinaryString(n); // built in Integer function. super nice
+    public static String getBinaryString(int n) {
+        return Integer.toBinaryString(n); // built in Integer function. super convenient
     }
 
-    public static int getLongestSubstringLength(String[] substrings) {
-        int max = 0;
-        for (String s : substrings) {
-            if (s.length() > max) {
-                max = s.length();
-            }
-        }
-        return max;
+    public static int getLengthLongestSubstring(List<String> substrings) {
+        return substrings.stream()
+            .max(Comparator.comparing(String::length))
+            .map(String::length)
+            .orElse(0);
+        
+        // also works but I want to show off my stream ;)
+
+        // int max = 0;
+        // for (String s : substrings) {
+        //     if (s.length() > max) {
+        //         max = s.length();
+        //     }
+        // }
+        // return max;
     }
 
-    public static String printLongestConsecutiveBits(int n) { // stupid, but fun
-        int numOnes = getLongestConsecutiveOnes(n);
-        String result = "";
-        for (int i = 0; i < numOnes; i++) {
-            result += "1";
-        }
-        return result;
-    }
-
-    public static String[] processWord(String word) {
+    public static List<String> getSubstrings(String word) {
         // we're working in binary so our lang = {1,0}
         // 00* works better than 0* because it splits on 1 or more consecutive 0's
-        return word.split("00*"); 
+        // return an array list so I can use a stream later
+        return Arrays.asList(word.split("00*"));
     }
 
 

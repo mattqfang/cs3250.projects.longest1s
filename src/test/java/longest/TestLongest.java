@@ -5,76 +5,60 @@ package longest;
 
 import static org.junit.Assert.assertEquals;
 
+import java.util.Arrays;
+import java.util.List;
+
 import org.junit.Test;
 
 public class TestLongest {
     @Test
-    public void checkForLength0() { // 0
+    public void noOnes() { // 0
         int expected = 0;
         int actual = Longest.getLongestConsecutiveOnes(0);
         assertEquals(expected, actual);
     }
 
     @Test
-    public void checkForLength1() { // 1
+    public void oneOnes() { // 1
         int expected = 1;
         int actual = Longest.getLongestConsecutiveOnes(1);
         assertEquals(expected, actual);
     }
     
     @Test
-    public void checkForLength2() { // ‭100010011001‬
-        int expected = 2;
-        int actual = Longest.getLongestConsecutiveOnes(2201);
+    public void blocksOfOnesAndZeros() { // ‭11011101111001‬
+        int expected = 4;
+        int actual = Longest.getLongestConsecutiveOnes(14201);
         assertEquals(expected, actual);
     }
 
     @Test
-    public void checkForLength3() { // 1110
+    public void givenExample() { // 1110
         int expected = 3;
         int actual = Longest.getLongestConsecutiveOnes(14);
         assertEquals(expected, actual);
     }
 
     @Test
-    public void checkForLength4() { // ‭11011101111001‬
-        int expected = 4;
-        int actual = Longest.getLongestConsecutiveOnes(14201);
-        assertEquals(expected, actual);
-    }
-     
-    @Test
-    public void checkForLength5() { // ‭1011111‬
-        int expected = 5;
-        int actual = Longest.getLongestConsecutiveOnes(95);
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void checkPrinting() {
-        String expected = "1111";
-        String actual = Longest.printLongestConsecutiveBits(14201);
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void checkForConversion() {
+    public void checkConversion() {
         String expected = "1110";
-        String actual = Longest.convertToBinaryString(14);
+        String actual = Longest.getBinaryString(14);
         assertEquals(expected, actual);
     }
 
     @Test
     public void checkWordProcessorEmpty() {
-        String[] expected = {""};
-        String[] actual = Longest.processWord("");
+        String[] toList = {""};
+        List<String> expected = Arrays.asList(toList);
+        List<String> actual = Longest.getSubstrings("");
         assertEquals(expected, actual);
     }
 
     @Test
     public void checkWordProcessor() {
-        String[] expected = {"11","1"};
-        String[] actual = Longest.processWord("1100001");
+        String[] toList = {"11","1"};
+        List<String> expected = Arrays.asList(toList);
+        List<String> actual = Longest.getSubstrings("1100001");
         assertEquals(expected, actual);
     }
 }
