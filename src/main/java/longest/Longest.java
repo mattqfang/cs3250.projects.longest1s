@@ -26,9 +26,9 @@ public class Longest {
 
     public static int getLengthLongestSubstring(List<String> substrings) {
         return substrings.stream()
-            .max(Comparator.comparing(String::length))
-            .map(String::length)
-            .orElse(0);
+            .max(Comparator.comparing(String::length)) // compare the length of each to get the longest string
+            .map(String::length) // map to the length value
+            .orElse(0); // 0 if the string is empty : the longest is returned
         
         // also works but I want to show off my stream ;)
 
