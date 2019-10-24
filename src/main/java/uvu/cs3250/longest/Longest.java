@@ -2,7 +2,7 @@ package uvu.cs3250.longest;
 
 public class Longest {
 
-    static String longest(int num){
+    public static String longest(int num){
         String strNum = Integer.toBinaryString(num);
         int count = 0;
         for(int i = 0; i < strNum.length(); i++){
@@ -20,8 +20,8 @@ public class Longest {
         return strNum + ": " + count;
     }
     public static void main(String[] args){
-        int n = 8955;
+        int n = 2147483647;
         System.out.println(longest(n));
-        System.out.println(longest('b'));
+        System.out.println(longest(2147483647));
     }
 }
