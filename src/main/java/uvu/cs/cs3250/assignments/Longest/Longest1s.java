@@ -1,14 +1,6 @@
+package uvu.cs.cs3250.assignments.Longest;
+
 public class Longest1s {
-
-    public static void main(String[] args) {
-        for (int i = 0; i < 10; i++) {
-            System.out.println(longest1s(i));
-        }
-        System.out.println(longest1s(15));
-        System.out.println(longest1s(127));
-        System.out.println(longest1s(150));
-    }
-
 
     public static int longest1s(int input) {
         String binary = Integer.toBinaryString(input);

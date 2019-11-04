@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a266c9a-d49f-4599-bc70-81531e6fdeb9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Longest1s.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/LongestTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="6a266c9a-d49f-4599-bc70-81531e6fdeb9" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +23,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/LongestTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+            <state relative-caret-position="51">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#187#188#0" expanded="true" />
@@ -147,7 +144,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572906806649" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572907049458" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RunDashboard">
@@ -163,8 +160,8 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.LongestTest">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Longest1s" />
+    <configuration name="Longest1s" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="uvu.cs.cs3250.assignments.Longest.Longest1s" />
       <module name="longest1s" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -180,15 +177,15 @@
     </configuration>
     <configuration name="LongestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="longest1s" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LongestTest" />
+      <option name="PACKAGE_NAME" value="uvu.cs.cs3250.assignments.Longest" />
+      <option name="MAIN_CLASS_NAME" value="uvu.cs.cs3250.assignments.Longest.LongestTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Application.Longest1s" />
       <item itemvalue="JUnit.All in longest1s" />
       <item itemvalue="JUnit.LongestTest" />
     </list>
@@ -213,9 +210,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LongestTest - 2019.11.04 at 15h 16m 33s.xml">
-      <configuration name="LongestTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LongestTest - 2019.11.04 at 15h 28m 25s.xml">
       <configuration name="LongestTest" configurationId="JUnit" />
     </history-entry>
@@ -243,9 +237,12 @@
     <history-entry file="LongestTest - 2019.11.04 at 15h 32m 21s.xml">
       <configuration name="LongestTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LongestTest - 2019.11.04 at 15h 33m 28s.xml">
+      <configuration name="LongestTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -307,8 +304,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/LongestTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#187#188#0" expanded="true" />
