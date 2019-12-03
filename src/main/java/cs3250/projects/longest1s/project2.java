@@ -26,5 +26,8 @@ public class project2 {
 		System.out.println();
 		System.out.println("the length is " + max);
 	}
+	public static void p2() {
+		System.out.println("No input");
+	}
 
 }

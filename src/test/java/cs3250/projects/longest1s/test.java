@@ -15,4 +15,8 @@ public class test {
 	public void test3() {
 		project2.p2(14);
 	}
+	@Test
+	public void testnull() {
+		project2.p2();
+	}
 }
